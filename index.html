@@ -1,0 +1,1059 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--Font IBM-Plex-Sans-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+<header class="header-main">
+  <div class="container">
+    <div class="header-content">
+      <a href="#" class="logo-main">
+        <img class="logo-main-icon" src="./assets/materials/icons/mainLogo.svg" alt="logo">
+      </a>
+
+      <div class="h-navigations">
+        <nav class="h-nav-links">
+          <ul>
+            <li>
+              <a class="h-nav-link" href="#">Цифры</a>
+            </li>
+            <li>
+              <a class="h-nav-link" href="#">Сделка Онлайн</a>
+            </li>
+            <li>
+              <a class="h-nav-link" href="#">О компании</a>
+            </li>
+            <li>
+              <a class="h-nav-link" href="#">Как начать</a>
+            </li>
+            <li>
+              <a class="h-nav-link" href="#">Тарифы</a>
+            </li>
+            <li>
+              <a class="h-nav-link" href="#">Отзывы</a>
+            </li>
+            <li>
+              <a class="h-nav-link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="h-buttons">
+          <button class="btn btn-b-reg btn-h-reg"><span>Регистрация</span></button>
+          <button class="btn btn-b-log btn-h-log"><span>Войти</span></button>
+        </div>
+      </div>
+
+      <button id="openBurger" class="h-burger-menu">
+        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.399994 1.33324C0.399994 0.81777 0.817861 0.399902 1.33333 0.399902H22.6667C23.1821 0.399902 23.6 0.81777 23.6 1.33324C23.6 1.8487 23.1821 2.26657 22.6667 2.26657H1.33333C0.817861 2.26657 0.399994 1.8487 0.399994 1.33324Z" fill="#E7F7F8"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.399994 7.99998C0.399994 7.48452 0.817861 7.06665 1.33333 7.06665H22.6667C23.1821 7.06665 23.6 7.48452 23.6 7.99998C23.6 8.51545 23.1821 8.93332 22.6667 8.93332H1.33333C0.817861 8.93332 0.399994 8.51545 0.399994 7.99998Z" fill="#E7F7F8"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.399994 14.6665C0.399994 14.151 0.817861 13.7332 1.33333 13.7332H22.6667C23.1821 13.7332 23.6 14.151 23.6 14.6665C23.6 15.182 23.1821 15.5998 22.6667 15.5998H1.33333C0.817861 15.5998 0.399994 15.182 0.399994 14.6665Z" fill="#E7F7F8"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="burger-menu">
+    <div class="burger-content">
+      <div class="burger-heading">
+        <button id="closeBurger" class="burger-menu-close">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.74035 8.74042C9.10484 8.37593 9.69579 8.37593 10.0603 8.74042L23.2596 21.9398C23.6241 22.3042 23.6241 22.8952 23.2596 23.2597C22.8951 23.6242 22.3042 23.6242 21.9397 23.2597L8.74035 10.0604C8.37586 9.69587 8.37586 9.10491 8.74035 8.74042Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.74036 23.2597C8.37587 22.8952 8.37587 22.3043 8.74036 21.9398L21.9397 8.74045C22.3042 8.37596 22.8951 8.37596 23.2596 8.74045C23.6241 9.10494 23.6241 9.69589 23.2596 10.0604L10.0603 23.2597C9.69581 23.6242 9.10485 23.6242 8.74036 23.2597Z" fill="white"/>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="burger-nav-links">
+        <ul>
+          <li>
+            <a class="b-nav-link" href="#">Цифры</a>
+          </li>
+          <li>
+            <a class="b-nav-link" href="#">Сделка Онлайн</a>
+          </li>
+          <li>
+            <a class="b-nav-link" href="#">О компании</a>
+          </li>
+          <li>
+            <a class="b-nav-link" href="#">Как начать</a>
+          </li>
+          <li>
+            <a class="b-nav-link" href="#">Тарифы</a>
+          </li>
+          <li>
+            <a class="b-nav-link" href="#">Отзывы</a>
+          </li>
+          <li>
+            <a class="b-nav-link" href="#">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="burger-buttons">
+      <button class="btn btn-b-reg"><span>Регистрация</span></button>
+      <button class="btn btn-b-log"><span>Войти</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <section class="section-wrapper s-banner-main">
+    <div class="container">
+      <div class="s-banner-content">
+        <div class="b-image">
+          <img src="./assets/materials/images/bannerImage.svg" alt="banner">
+        </div>
+        <div class="b-heading">
+          <h2 class="b-h-title">
+            моментально Копируй сделки профи трейдеров
+          </h2>
+
+          <p class="b-h-subtitle">
+            Начни копировать сделки с успешной командой профессиональных трейдеров в автоматическом режиме.
+          </p>
+
+          <div class="b-h-start-form">
+            <input id="bannerEmailForm" class="b-h-form-input" type="email" placeholder="Ваш e–mail">
+            <div class="b-h-form-submit">
+              <button id="getEmail"><span>Начать</span></button>
+            </div>
+          </div>
+
+          <span class="b-h-span">5 дней бесплатного пользования</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-wrapper s-digital-main">
+    <div class="rectangle-dis">
+      <svg width="267" height="82" viewBox="0 0 267 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H222.855C226.179 0 229.232 1.83153 230.796 4.7638L264.939 68.7638C268.137 74.7588 263.793 82 256.998 82H8.99999C4.02943 82 0 77.9706 0 73V0Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="rectangle-desc">
+      <svg width="639" height="60" viewBox="0 0 639 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H575.686C577.808 0 579.843 0.842855 581.343 2.34315L639 60H0V0Z" fill="white"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="s-digital-content">
+        <div class="s-d-heading">
+          <h2 class="s-d-title">Цифры</h2>
+          <p class="s-d-subtitle">Cентябрь 2022</p>
+        </div>
+
+        <div class="s-d-info s-d-info-deals">
+          <div class="s-d-info-item">
+            <h3>Торговой прибыли</h3>
+            <p>2756%</p>
+          </div>
+          <div class="s-d-info-item s-d-info-item-deals">
+            <h3>фьючерсных и спотовых сделок</h3>
+            <p>67</p>
+          </div>
+        </div>
+
+        <div class="s-d-info s-d-info-submits">
+          <div class="s-d-info-item s-d-info-item-sub">
+            <h3>прибыль подписчиков</h3>
+            <p>375000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-wrapper s-transactions-main">
+    <div class="container">
+      <div class="s-transactions-content">
+        <h2 class="s-tran-title">Прошедшие сделки</h2>
+        <label class="s-tran-label">Онлайн</label>
+      </div>
+
+<!--      <div class="section-wrapper s-transactions-cards">-->
+<!--        <div class="s-tran-cards">-->
+<!--          <div class="s-tran-card">-->
+<!--            <div class="s-tran-card-bg">-->
+<!--              <svg width="299" height="208" viewBox="0 0 299 208" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                <path d="M258.169 1.15469C257.42 0.41488 256.41 0 255.357 0H4C1.79086 0 0 1.79086 0 4V204C0 206.209 1.79086 208 4 208H295C297.209 208 299 206.209 299 204V43.1709C299 42.1017 298.572 41.0771 297.811 40.3256L258.169 1.15469Z" fill="#6A54FF"/>-->
+<!--                <g opacity="0.15">-->
+<!--                  <path d="M251.433 124.829L188 15.3221L219.508 40.6069L259.783 110.365L251.433 124.829Z" fill="#000001"/>-->
+<!--                  <path d="M310.979 58.5303L247.86 168.218L254.003 128.289L294.278 58.5303L310.979 58.5303Z" fill="#000001"/>-->
+<!--                  <path d="M262.058 102.101L285.916 60.7775H238.2L262.058 102.101Z" fill="#000001"/>-->
+<!--                  <path d="M224.158 40.8049L350.71 40.6237L313.058 55.2681L232.508 55.2681L224.158 40.8049Z" fill="#000001"/>-->
+<!--                </g>-->
+<!--              </svg>-->
+<!--            </div>-->
+
+<!--            <div class="s-tran-card-content">-->
+
+<!--              <div class="s-tran-card-heading">-->
+<!--                <h3>NEAR/USDT</h3>-->
+<!--                <p>SPOT · 1 мин. назад</p>-->
+<!--              </div>-->
+
+<!--              <div class="s-tran-card-info">-->
+<!--                <h3>Прибыль</h3>-->
+<!--                <div class="s-tran-card-info-percent">-->
+<!--                  <p>58.6206%</p>-->
+<!--                  <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M5.71429 2L10 6.5M5.71429 2L1 6.5M5.71429 2V18" stroke="#35FF9E" stroke-width="2"/>-->
+<!--                  </svg>-->
+<!--                </div>-->
+
+<!--                <div class="s-tran-card-info-footer">-->
+<!--                  <h3>Цель 4</h3>-->
+<!--                  <p>Дата входа <span>06.10.2022</span></p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+
+
+
+<!--          </div>-->
+<!--          <div class="s-tran-card">-->
+<!--            <div class="s-tran-card-bg">-->
+<!--              <svg width="299" height="208" viewBox="0 0 299 208" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                <path d="M258.169 1.15469C257.42 0.41488 256.41 0 255.357 0H4C1.79086 0 0 1.79086 0 4V204C0 206.209 1.79086 208 4 208H295C297.209 208 299 206.209 299 204V43.1709C299 42.1017 298.572 41.0771 297.811 40.3256L258.169 1.15469Z" fill="#6A54FF"/>-->
+<!--                <g opacity="0.15">-->
+<!--                  <path d="M251.433 124.829L188 15.3221L219.508 40.6069L259.783 110.365L251.433 124.829Z" fill="#000001"/>-->
+<!--                  <path d="M310.979 58.5303L247.86 168.218L254.003 128.289L294.278 58.5303L310.979 58.5303Z" fill="#000001"/>-->
+<!--                  <path d="M262.058 102.101L285.916 60.7775H238.2L262.058 102.101Z" fill="#000001"/>-->
+<!--                  <path d="M224.158 40.8049L350.71 40.6237L313.058 55.2681L232.508 55.2681L224.158 40.8049Z" fill="#000001"/>-->
+<!--                </g>-->
+<!--              </svg>-->
+<!--            </div>-->
+
+<!--            <div class="s-tran-card-content">-->
+
+<!--              <div class="s-tran-card-heading">-->
+<!--                <h3>NEAR/USDT</h3>-->
+<!--                <p>SPOT · 1 мин. назад</p>-->
+<!--              </div>-->
+
+<!--              <div class="s-tran-card-info">-->
+<!--                <h3>Прибыль</h3>-->
+<!--                <div class="s-tran-card-info-percent">-->
+<!--                  <p>58.6206%</p>-->
+<!--                  <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M5.71429 2L10 6.5M5.71429 2L1 6.5M5.71429 2V18" stroke="#35FF9E" stroke-width="2"/>-->
+<!--                  </svg>-->
+<!--                </div>-->
+
+<!--                <div class="s-tran-card-info-footer">-->
+<!--                  <h3>Цель 4</h3>-->
+<!--                  <p>Дата входа <span>06.10.2022</span></p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+
+
+
+<!--          </div>-->
+<!--          <div class="s-tran-card">-->
+<!--            <div class="s-tran-card-bg">-->
+<!--              <svg width="299" height="208" viewBox="0 0 299 208" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                <path d="M258.169 1.15469C257.42 0.41488 256.41 0 255.357 0H4C1.79086 0 0 1.79086 0 4V204C0 206.209 1.79086 208 4 208H295C297.209 208 299 206.209 299 204V43.1709C299 42.1017 298.572 41.0771 297.811 40.3256L258.169 1.15469Z" fill="#6A54FF"/>-->
+<!--                <g opacity="0.15">-->
+<!--                  <path d="M251.433 124.829L188 15.3221L219.508 40.6069L259.783 110.365L251.433 124.829Z" fill="#000001"/>-->
+<!--                  <path d="M310.979 58.5303L247.86 168.218L254.003 128.289L294.278 58.5303L310.979 58.5303Z" fill="#000001"/>-->
+<!--                  <path d="M262.058 102.101L285.916 60.7775H238.2L262.058 102.101Z" fill="#000001"/>-->
+<!--                  <path d="M224.158 40.8049L350.71 40.6237L313.058 55.2681L232.508 55.2681L224.158 40.8049Z" fill="#000001"/>-->
+<!--                </g>-->
+<!--              </svg>-->
+<!--            </div>-->
+
+<!--            <div class="s-tran-card-content">-->
+
+<!--              <div class="s-tran-card-heading">-->
+<!--                <h3>NEAR/USDT</h3>-->
+<!--                <p>SPOT · 1 мин. назад</p>-->
+<!--              </div>-->
+
+<!--              <div class="s-tran-card-info">-->
+<!--                <h3>Прибыль</h3>-->
+<!--                <div class="s-tran-card-info-percent">-->
+<!--                  <p>58.6206%</p>-->
+<!--                  <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M5.71429 2L10 6.5M5.71429 2L1 6.5M5.71429 2V18" stroke="#35FF9E" stroke-width="2"/>-->
+<!--                  </svg>-->
+<!--                </div>-->
+
+<!--                <div class="s-tran-card-info-footer">-->
+<!--                  <h3>Цель 4</h3>-->
+<!--                  <p>Дата входа <span>06.10.2022</span></p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+
+
+
+<!--          </div>-->
+<!--          <div class="s-tran-card">-->
+<!--            <div class="s-tran-card-bg">-->
+<!--              <svg width="299" height="208" viewBox="0 0 299 208" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                <path d="M258.169 1.15469C257.42 0.41488 256.41 0 255.357 0H4C1.79086 0 0 1.79086 0 4V204C0 206.209 1.79086 208 4 208H295C297.209 208 299 206.209 299 204V43.1709C299 42.1017 298.572 41.0771 297.811 40.3256L258.169 1.15469Z" fill="#6A54FF"/>-->
+<!--                <g opacity="0.15">-->
+<!--                  <path d="M251.433 124.829L188 15.3221L219.508 40.6069L259.783 110.365L251.433 124.829Z" fill="#000001"/>-->
+<!--                  <path d="M310.979 58.5303L247.86 168.218L254.003 128.289L294.278 58.5303L310.979 58.5303Z" fill="#000001"/>-->
+<!--                  <path d="M262.058 102.101L285.916 60.7775H238.2L262.058 102.101Z" fill="#000001"/>-->
+<!--                  <path d="M224.158 40.8049L350.71 40.6237L313.058 55.2681L232.508 55.2681L224.158 40.8049Z" fill="#000001"/>-->
+<!--                </g>-->
+<!--              </svg>-->
+<!--            </div>-->
+
+<!--            <div class="s-tran-card-content">-->
+
+<!--              <div class="s-tran-card-heading">-->
+<!--                <h3>NEAR/USDT</h3>-->
+<!--                <p>SPOT · 1 мин. назад</p>-->
+<!--              </div>-->
+
+<!--              <div class="s-tran-card-info">-->
+<!--                <h3>Прибыль</h3>-->
+<!--                <div class="s-tran-card-info-percent">-->
+<!--                  <p>58.6206%</p>-->
+<!--                  <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M5.71429 2L10 6.5M5.71429 2L1 6.5M5.71429 2V18" stroke="#35FF9E" stroke-width="2"/>-->
+<!--                  </svg>-->
+<!--                </div>-->
+
+<!--                <div class="s-tran-card-info-footer">-->
+<!--                  <h3>Цель 4</h3>-->
+<!--                  <p>Дата входа <span>06.10.2022</span></p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+
+
+
+<!--          </div>-->
+<!--          <div class="s-tran-card">-->
+<!--            <div class="s-tran-card-bg">-->
+<!--              <svg width="299" height="208" viewBox="0 0 299 208" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                <path d="M258.169 1.15469C257.42 0.41488 256.41 0 255.357 0H4C1.79086 0 0 1.79086 0 4V204C0 206.209 1.79086 208 4 208H295C297.209 208 299 206.209 299 204V43.1709C299 42.1017 298.572 41.0771 297.811 40.3256L258.169 1.15469Z" fill="#6A54FF"/>-->
+<!--                <g opacity="0.15">-->
+<!--                  <path d="M251.433 124.829L188 15.3221L219.508 40.6069L259.783 110.365L251.433 124.829Z" fill="#000001"/>-->
+<!--                  <path d="M310.979 58.5303L247.86 168.218L254.003 128.289L294.278 58.5303L310.979 58.5303Z" fill="#000001"/>-->
+<!--                  <path d="M262.058 102.101L285.916 60.7775H238.2L262.058 102.101Z" fill="#000001"/>-->
+<!--                  <path d="M224.158 40.8049L350.71 40.6237L313.058 55.2681L232.508 55.2681L224.158 40.8049Z" fill="#000001"/>-->
+<!--                </g>-->
+<!--              </svg>-->
+<!--            </div>-->
+
+<!--            <div class="s-tran-card-content">-->
+
+<!--              <div class="s-tran-card-heading">-->
+<!--                <h3>NEAR/USDT</h3>-->
+<!--                <p>SPOT · 1 мин. назад</p>-->
+<!--              </div>-->
+
+<!--              <div class="s-tran-card-info">-->
+<!--                <h3>Прибыль</h3>-->
+<!--                <div class="s-tran-card-info-percent">-->
+<!--                  <p>58.6206%</p>-->
+<!--                  <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M5.71429 2L10 6.5M5.71429 2L1 6.5M5.71429 2V18" stroke="#35FF9E" stroke-width="2"/>-->
+<!--                  </svg>-->
+<!--                </div>-->
+
+<!--                <div class="s-tran-card-info-footer">-->
+<!--                  <h3>Цель 4</h3>-->
+<!--                  <p>Дата входа <span>06.10.2022</span></p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+
+
+
+<!--          </div>-->
+<!--          <div class="s-tran-card">-->
+<!--            <div class="s-tran-card-bg">-->
+<!--              <svg width="299" height="208" viewBox="0 0 299 208" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                <path d="M258.169 1.15469C257.42 0.41488 256.41 0 255.357 0H4C1.79086 0 0 1.79086 0 4V204C0 206.209 1.79086 208 4 208H295C297.209 208 299 206.209 299 204V43.1709C299 42.1017 298.572 41.0771 297.811 40.3256L258.169 1.15469Z" fill="#6A54FF"/>-->
+<!--                <g opacity="0.15">-->
+<!--                  <path d="M251.433 124.829L188 15.3221L219.508 40.6069L259.783 110.365L251.433 124.829Z" fill="#000001"/>-->
+<!--                  <path d="M310.979 58.5303L247.86 168.218L254.003 128.289L294.278 58.5303L310.979 58.5303Z" fill="#000001"/>-->
+<!--                  <path d="M262.058 102.101L285.916 60.7775H238.2L262.058 102.101Z" fill="#000001"/>-->
+<!--                  <path d="M224.158 40.8049L350.71 40.6237L313.058 55.2681L232.508 55.2681L224.158 40.8049Z" fill="#000001"/>-->
+<!--                </g>-->
+<!--              </svg>-->
+<!--            </div>-->
+
+<!--            <div class="s-tran-card-content">-->
+
+<!--              <div class="s-tran-card-heading">-->
+<!--                <h3>NEAR/USDT</h3>-->
+<!--                <p>SPOT · 1 мин. назад</p>-->
+<!--              </div>-->
+
+<!--              <div class="s-tran-card-info">-->
+<!--                <h3>Прибыль</h3>-->
+<!--                <div class="s-tran-card-info-percent">-->
+<!--                  <p>58.6206%</p>-->
+<!--                  <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path d="M5.71429 2L10 6.5M5.71429 2L1 6.5M5.71429 2V18" stroke="#35FF9E" stroke-width="2"/>-->
+<!--                  </svg>-->
+<!--                </div>-->
+
+<!--                <div class="s-tran-card-info-footer">-->
+<!--                  <h3>Цель 4</h3>-->
+<!--                  <p>Дата входа <span>06.10.2022</span></p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+
+
+
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <div class="swiper mySwiper s-transactions-cards">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="s-tran-card">
+              <div class="s-tran-card-bg">
+                <svg width="299" height="208" viewBox="0 0 299 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M258.169 1.15469C257.42 0.41488 256.41 0 255.357 0H4C1.79086 0 0 1.79086 0 4V204C0 206.209 1.79086 208 4 208H295C297.209 208 299 206.209 299 204V43.1709C299 42.1017 298.572 41.0771 297.811 40.3256L258.169 1.15469Z" fill="#6A54FF"/>
+                  <g opacity="0.15">
+                    <path d="M251.433 124.829L188 15.3221L219.508 40.6069L259.783 110.365L251.433 124.829Z" fill="#000001"/>
+                    <path d="M310.979 58.5303L247.86 168.218L254.003 128.289L294.278 58.5303L310.979 58.5303Z" fill="#000001"/>
+                    <path d="M262.058 102.101L285.916 60.7775H238.2L262.058 102.101Z" fill="#000001"/>
+                    <path d="M224.158 40.8049L350.71 40.6237L313.058 55.2681L232.508 55.2681L224.158 40.8049Z" fill="#000001"/>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="s-tran-card-content">
+
+                <div class="s-tran-card-heading">
+                  <h3>NEAR/USDT</h3>
+                  <p>SPOT · 1 мин. назад</p>
+                </div>
+
+                <div class="s-tran-card-info">
+                  <h3>Прибыль</h3>
+                  <div class="s-tran-card-info-percent">
+                    <p>58.6206%</p>
+                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.71429 2L10 6.5M5.71429 2L1 6.5M5.71429 2V18" stroke="#35FF9E" stroke-width="2"/>
+                    </svg>
+                  </div>
+
+                  <div class="s-tran-card-info-footer">
+                    <h3>Цель 4</h3>
+                    <p>Дата входа <span>06.10.2022</span></p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="s-tran-card">
+              <div class="s-tran-card-bg">
+                <svg width="299" height="208" viewBox="0 0 299 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M258.169 1.15469C257.42 0.41488 256.41 0 255.357 0H4C1.79086 0 0 1.79086 0 4V204C0 206.209 1.79086 208 4 208H295C297.209 208 299 206.209 299 204V43.1709C299 42.1017 298.572 41.0771 297.811 40.3256L258.169 1.15469Z" fill="#6A54FF"/>
+                  <g opacity="0.15">
+                    <path d="M251.433 124.829L188 15.3221L219.508 40.6069L259.783 110.365L251.433 124.829Z" fill="#000001"/>
+                    <path d="M310.979 58.5303L247.86 168.218L254.003 128.289L294.278 58.5303L310.979 58.5303Z" fill="#000001"/>
+                    <path d="M262.058 102.101L285.916 60.7775H238.2L262.058 102.101Z" fill="#000001"/>
+                    <path d="M224.158 40.8049L350.71 40.6237L313.058 55.2681L232.508 55.2681L224.158 40.8049Z" fill="#000001"/>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="s-tran-card-content">
+
+                <div class="s-tran-card-heading">
+                  <h3>NEAR/USDT</h3>
+                  <p>SPOT · 1 мин. назад</p>
+                </div>
+
+                <div class="s-tran-card-info">
+                  <h3>Прибыль</h3>
+                  <div class="s-tran-card-info-percent">
+                    <p>58.6206%</p>
+                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.71429 2L10 6.5M5.71429 2L1 6.5M5.71429 2V18" stroke="#35FF9E" stroke-width="2"/>
+                    </svg>
+                  </div>
+
+                  <div class="s-tran-card-info-footer">
+                    <h3>Цель 4</h3>
+                    <p>Дата входа <span>06.10.2022</span></p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="s-tran-card">
+              <div class="s-tran-card-bg">
+                <svg width="299" height="208" viewBox="0 0 299 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M258.169 1.15469C257.42 0.41488 256.41 0 255.357 0H4C1.79086 0 0 1.79086 0 4V204C0 206.209 1.79086 208 4 208H295C297.209 208 299 206.209 299 204V43.1709C299 42.1017 298.572 41.0771 297.811 40.3256L258.169 1.15469Z" fill="#6A54FF"/>
+                  <g opacity="0.15">
+                    <path d="M251.433 124.829L188 15.3221L219.508 40.6069L259.783 110.365L251.433 124.829Z" fill="#000001"/>
+                    <path d="M310.979 58.5303L247.86 168.218L254.003 128.289L294.278 58.5303L310.979 58.5303Z" fill="#000001"/>
+                    <path d="M262.058 102.101L285.916 60.7775H238.2L262.058 102.101Z" fill="#000001"/>
+                    <path d="M224.158 40.8049L350.71 40.6237L313.058 55.2681L232.508 55.2681L224.158 40.8049Z" fill="#000001"/>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="s-tran-card-content">
+
+                <div class="s-tran-card-heading">
+                  <h3>NEAR/USDT</h3>
+                  <p>SPOT · 1 мин. назад</p>
+                </div>
+
+                <div class="s-tran-card-info">
+                  <h3>Прибыль</h3>
+                  <div class="s-tran-card-info-percent">
+                    <p>58.6206%</p>
+                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.71429 2L10 6.5M5.71429 2L1 6.5M5.71429 2V18" stroke="#35FF9E" stroke-width="2"/>
+                    </svg>
+                  </div>
+
+                  <div class="s-tran-card-info-footer">
+                    <h3>Цель 4</h3>
+                    <p>Дата входа <span>06.10.2022</span></p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="s-tran-card">
+              <div class="s-tran-card-bg">
+                <svg width="299" height="208" viewBox="0 0 299 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M258.169 1.15469C257.42 0.41488 256.41 0 255.357 0H4C1.79086 0 0 1.79086 0 4V204C0 206.209 1.79086 208 4 208H295C297.209 208 299 206.209 299 204V43.1709C299 42.1017 298.572 41.0771 297.811 40.3256L258.169 1.15469Z" fill="#6A54FF"/>
+                  <g opacity="0.15">
+                    <path d="M251.433 124.829L188 15.3221L219.508 40.6069L259.783 110.365L251.433 124.829Z" fill="#000001"/>
+                    <path d="M310.979 58.5303L247.86 168.218L254.003 128.289L294.278 58.5303L310.979 58.5303Z" fill="#000001"/>
+                    <path d="M262.058 102.101L285.916 60.7775H238.2L262.058 102.101Z" fill="#000001"/>
+                    <path d="M224.158 40.8049L350.71 40.6237L313.058 55.2681L232.508 55.2681L224.158 40.8049Z" fill="#000001"/>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="s-tran-card-content">
+
+                <div class="s-tran-card-heading">
+                  <h3>NEAR/USDT</h3>
+                  <p>SPOT · 1 мин. назад</p>
+                </div>
+
+                <div class="s-tran-card-info">
+                  <h3>Прибыль</h3>
+                  <div class="s-tran-card-info-percent">
+                    <p>58.6206%</p>
+                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.71429 2L10 6.5M5.71429 2L1 6.5M5.71429 2V18" stroke="#35FF9E" stroke-width="2"/>
+                    </svg>
+                  </div>
+
+                  <div class="s-tran-card-info-footer">
+                    <h3>Цель 4</h3>
+                    <p>Дата входа <span>06.10.2022</span></p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="s-tran-card">
+              <div class="s-tran-card-bg">
+                <svg width="299" height="208" viewBox="0 0 299 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M258.169 1.15469C257.42 0.41488 256.41 0 255.357 0H4C1.79086 0 0 1.79086 0 4V204C0 206.209 1.79086 208 4 208H295C297.209 208 299 206.209 299 204V43.1709C299 42.1017 298.572 41.0771 297.811 40.3256L258.169 1.15469Z" fill="#6A54FF"/>
+                  <g opacity="0.15">
+                    <path d="M251.433 124.829L188 15.3221L219.508 40.6069L259.783 110.365L251.433 124.829Z" fill="#000001"/>
+                    <path d="M310.979 58.5303L247.86 168.218L254.003 128.289L294.278 58.5303L310.979 58.5303Z" fill="#000001"/>
+                    <path d="M262.058 102.101L285.916 60.7775H238.2L262.058 102.101Z" fill="#000001"/>
+                    <path d="M224.158 40.8049L350.71 40.6237L313.058 55.2681L232.508 55.2681L224.158 40.8049Z" fill="#000001"/>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="s-tran-card-content">
+
+                <div class="s-tran-card-heading">
+                  <h3>NEAR/USDT</h3>
+                  <p>SPOT · 1 мин. назад</p>
+                </div>
+
+                <div class="s-tran-card-info">
+                  <h3>Прибыль</h3>
+                  <div class="s-tran-card-info-percent">
+                    <p>58.6206%</p>
+                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.71429 2L10 6.5M5.71429 2L1 6.5M5.71429 2V18" stroke="#35FF9E" stroke-width="2"/>
+                    </svg>
+                  </div>
+
+                  <div class="s-tran-card-info-footer">
+                    <h3>Цель 4</h3>
+                    <p>Дата входа <span>06.10.2022</span></p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="s-tran-card">
+              <div class="s-tran-card-bg">
+                <svg width="299" height="208" viewBox="0 0 299 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M258.169 1.15469C257.42 0.41488 256.41 0 255.357 0H4C1.79086 0 0 1.79086 0 4V204C0 206.209 1.79086 208 4 208H295C297.209 208 299 206.209 299 204V43.1709C299 42.1017 298.572 41.0771 297.811 40.3256L258.169 1.15469Z" fill="#6A54FF"/>
+                  <g opacity="0.15">
+                    <path d="M251.433 124.829L188 15.3221L219.508 40.6069L259.783 110.365L251.433 124.829Z" fill="#000001"/>
+                    <path d="M310.979 58.5303L247.86 168.218L254.003 128.289L294.278 58.5303L310.979 58.5303Z" fill="#000001"/>
+                    <path d="M262.058 102.101L285.916 60.7775H238.2L262.058 102.101Z" fill="#000001"/>
+                    <path d="M224.158 40.8049L350.71 40.6237L313.058 55.2681L232.508 55.2681L224.158 40.8049Z" fill="#000001"/>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="s-tran-card-content">
+
+                <div class="s-tran-card-heading">
+                  <h3>NEAR/USDT</h3>
+                  <p>SPOT · 1 мин. назад</p>
+                </div>
+
+                <div class="s-tran-card-info">
+                  <h3>Прибыль</h3>
+                  <div class="s-tran-card-info-percent">
+                    <p>58.6206%</p>
+                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.71429 2L10 6.5M5.71429 2L1 6.5M5.71429 2V18" stroke="#35FF9E" stroke-width="2"/>
+                    </svg>
+                  </div>
+
+                  <div class="s-tran-card-info-footer">
+                    <h3>Цель 4</h3>
+                    <p>Дата входа <span>06.10.2022</span></p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="s-tran-card">
+              <div class="s-tran-card-bg">
+                <svg width="299" height="208" viewBox="0 0 299 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M258.169 1.15469C257.42 0.41488 256.41 0 255.357 0H4C1.79086 0 0 1.79086 0 4V204C0 206.209 1.79086 208 4 208H295C297.209 208 299 206.209 299 204V43.1709C299 42.1017 298.572 41.0771 297.811 40.3256L258.169 1.15469Z" fill="#6A54FF"/>
+                  <g opacity="0.15">
+                    <path d="M251.433 124.829L188 15.3221L219.508 40.6069L259.783 110.365L251.433 124.829Z" fill="#000001"/>
+                    <path d="M310.979 58.5303L247.86 168.218L254.003 128.289L294.278 58.5303L310.979 58.5303Z" fill="#000001"/>
+                    <path d="M262.058 102.101L285.916 60.7775H238.2L262.058 102.101Z" fill="#000001"/>
+                    <path d="M224.158 40.8049L350.71 40.6237L313.058 55.2681L232.508 55.2681L224.158 40.8049Z" fill="#000001"/>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="s-tran-card-content">
+
+                <div class="s-tran-card-heading">
+                  <h3>NEAR/USDT</h3>
+                  <p>SPOT · 1 мин. назад</p>
+                </div>
+
+                <div class="s-tran-card-info">
+                  <h3>Прибыль</h3>
+                  <div class="s-tran-card-info-percent">
+                    <p>58.6206%</p>
+                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.71429 2L10 6.5M5.71429 2L1 6.5M5.71429 2V18" stroke="#35FF9E" stroke-width="2"/>
+                    </svg>
+                  </div>
+
+                  <div class="s-tran-card-info-footer">
+                    <h3>Цель 4</h3>
+                    <p>Дата входа <span>06.10.2022</span></p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-wrapper s-company-main">
+    <div class="rectangle-dis">
+      <svg width="267" height="82" viewBox="0 0 267 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H222.855C226.179 0 229.232 1.83153 230.796 4.7638L264.939 68.7638C268.137 74.7588 263.793 82 256.998 82H8.99999C4.02943 82 0 77.9706 0 73V0Z" fill="white"/>
+      </svg>
+    </div>
+    <div class="rectangle-desc">
+      <svg width="639" height="60" viewBox="0 0 639 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H575.686C577.808 0 579.843 0.842855 581.343 2.34315L639 60H0V0Z" fill="white"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="s-company-content">
+        <div class="s-company-wrapper">
+          <div class="s-c-heading">
+            <h2 class="s-c-title">О Компании</h2>
+          </div>
+
+          <div class="s-c-info">
+            <p class="s-c-info-text-up">
+              Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным брокером биржи Binance.
+            </p>
+            <p class="s-c-info-text-down">
+              Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.
+            </p>
+          </div>
+        </div>
+
+        <div class="s-company-trying-block">
+          <h3 class="comp-tr-title">Попробуйте сейчас и получите 5 дней бесплатного пользования</h3>
+
+          <form class="tr-form">
+            <input class="tr-input" type="email" placeholder="Ваш e-mail">
+            <button class="tr-btn">
+              попробовать
+            </button>
+          </form>
+
+          <div class="tr-form-desc">
+            <input class="tr-form-desc-input" type="email" placeholder="Ваш e–mail">
+            <div class="tr-form-desc-submit">
+              <button><span>Начать</span></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="section-wrapper s-tariff-main">
+    <div class="container">
+      <div class="s-tariff-content">
+        <h2 class="s-tariff-title">Тарифы</h2>
+        <div class="s-tariff-buttons">
+          <button id="switch1" class="btn-tariff switch active">СПОТ</button>
+          <button id="switch2" class="btn-tariff switch">фьючерс</button>
+        </div>
+
+        <div class="s-tariff-card-content-wrapper-main">
+          <div class="s-tariff-card-content-wrapper">
+            <div class="s-tariff-card-content">
+              <h2 class="s-tariff-card-title">Standard</h2>
+
+              <div class="s-tariff-card-block">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.5625L4.71231 9.27481L9.96232 1.39982" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="s-t-c-block-paragraph">
+                  Ручной трейдинг
+                </p>
+              </div>
+
+              <div class="s-tariff-card-block">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.5625L4.71231 9.27481L9.96232 1.39982" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="s-t-c-block-paragraph">
+                  Автоматическое или полуавтоматическое копирование сделок
+                </p>
+              </div>
+
+              <div class="s-tariff-card-block">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.5625L4.71231 9.27481L9.96232 1.39982" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="s-t-c-block-paragraph">
+                  Личный кабинет со статистикой
+                </p>
+              </div>
+
+              <div class="s-tariff-card-block">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.5625L4.71231 9.27481L9.96232 1.39982" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="s-t-c-block-paragraph">
+                  Среднесрочные сделки с <br> уровнями набора портфеля
+                </p>
+              </div>
+
+              <div class="s-tariff-card-info">
+                <div class="s-t-card-i-text">
+                  <p class="s-t-card-i-text-p">$234</p>
+                  <label class="s-t-card-i-text-label">-35%</label>
+                </div>
+
+                <button class="s-tariff-card-i-btn">
+                  <span class="s-tariff-card-i-btn-span">12 месяцев</span>
+                  <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.999999 1.5L7 7.5L13 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="s-tariff-card-button-submit-wrapper">
+                <button class="s-tariff-card-button-submit">
+                  <h3 class="s-tar-c-btn-up">Попробовать</h3>
+                  <p class="s-tar-c-btn-down">5 дней бесплатно</p>
+                </button>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="s-tariff-card-content-wrapper">
+            <div class="s-tariff-card-content s-tariff-card-content-second">
+              <h2 class="s-tariff-card-title">VIP</h2>
+
+              <div class="s-tariff-card-block">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.5625L4.71231 9.27481L9.96232 1.39982" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="s-t-c-block-paragraph">
+                  Ручной трейдинг
+                </p>
+              </div>
+
+              <div class="s-tariff-card-block">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.5625L4.71231 9.27481L9.96232 1.39982" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="s-t-c-block-paragraph">
+                  Автоматическое или полуавтоматическое копирование сделок
+                </p>
+              </div>
+
+              <div class="s-tariff-card-block">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.5625L4.71231 9.27481L9.96232 1.39982" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="s-t-c-block-paragraph">
+                  Личный кабинет со статистикой
+                </p>
+              </div>
+
+              <div class="s-tariff-card-block">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5.5625L4.71231 9.27481L9.96232 1.39982" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="s-t-c-block-paragraph">
+                  Среднесрочные сделки с <br> уровнями набора портфеля
+                </p>
+              </div>
+
+              <div class="s-tariff-card-info">
+                <div class="s-t-card-i-text">
+                  <p class="s-t-card-i-text-p">$585</p>
+                  <label class="s-t-card-i-text-label">-35%</label>
+                </div>
+
+                <button class="s-tariff-card-i-btn">
+                  <span class="s-tariff-card-i-btn-span">12 месяцев</span>
+                  <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.999999 1.5L7 7.5L13 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="s-tariff-card-button-submit-wrapper">
+                <button class="s-tariff-card-button-submit">
+                  <h3 class="s-tar-c-btn-up">Попробовать</h3>
+                  <p class="s-tar-c-btn-down">5 дней бесплатно</p>
+                </button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="section-wrapper s-questions-main">
+    <div class="container">
+      <div class="s-questions-content">
+        <h2 class="s-quest-title">Часто задаваемые вопросы</h2>
+
+        <div class="s-quest-cards">
+
+          <div class="s-quest-card">
+            <div class="s-quest-heading">
+              <h3 class="s-quest-heading-title">Что такое TradeBlade</h3>
+              <svg class="quest-arrow" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.999999 1.5L7 7.5L13 1.5" stroke="#030718" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <div class="c-quest-answer">
+              <p class="c-quest-answer-text" style="margin-bottom: 20px">
+                Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным брокером биржи Binance.
+              </p>
+              <p class="c-quest-answer-text">
+                Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.
+              </p>
+            </div>
+          </div>
+          <div class="s-quest-card">
+            <div class="s-quest-heading">
+              <h3 class="s-quest-heading-title">Что такое TradeBlade</h3>
+              <svg class="quest-arrow" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.999999 1.5L7 7.5L13 1.5" stroke="#030718" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <div class="c-quest-answer">
+              <p class="c-quest-answer-text" style="margin-bottom: 20px">
+                Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным брокером биржи Binance.
+              </p>
+              <p class="c-quest-answer-text">
+                Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.
+              </p>
+            </div>
+          </div>
+          <div class="s-quest-card">
+            <div class="s-quest-heading">
+              <h3 class="s-quest-heading-title">Что такое TradeBlade</h3>
+              <svg class="quest-arrow" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.999999 1.5L7 7.5L13 1.5" stroke="#030718" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <div class="c-quest-answer">
+              <p class="c-quest-answer-text" style="margin-bottom: 20px">
+                Мы опытная команда, для которой трейдинг – профессия. TradeBlade является авторизованным официальным брокером биржи Binance.
+              </p>
+              <p class="c-quest-answer-text">
+                Он представляет пользователям множество преимуществ, таких как более високая скорость синхронизации API и возможность создать учетную запись Binance через платформу TradeBlade всего в 1 клик.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer-main">
+  <div class="footer-content">
+      <div class="footer-up-c">
+        <div class="footer-up-c-wrapper">
+          <h3 class="footer-title">Быстрая навигация</h3>
+          <nav class="footer-nav-links">
+            <ul>
+              <li>
+                <a class="f-nav-link" href="#">Цифры</a>
+              </li>
+              <li>
+                <a class="f-nav-link" href="#">Сделка Онлайн</a>
+              </li>
+              <li>
+                <a class="f-nav-link" href="#">О компании</a>
+              </li>
+              <li>
+                <a class="f-nav-link" href="#">Как начать</a>
+              </li>
+              <li>
+                <a class="f-nav-link" href="#">Тарифы</a>
+              </li>
+              <li>
+                <a class="f-nav-link" href="#">Отзывы</a>
+              </li>
+              <li>
+                <a class="f-nav-link" href="#">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-down-c">
+        <div class="f-img-wrapper">
+          <img class="f-d-logo" src="./assets/materials/icons/mainLogo.svg" alt="logo">
+        </div>
+        <p class="f-copyright-text">
+          © 2022 TradeBlade. All rights reserved
+        </p>
+      </div>
+    </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  function getSlidesPerView() {
+    return window.innerWidth < 1400 ? 1 : 4;
+  }
+
+  let swiper = new Swiper(".mySwiper", {
+    slidesPerView: getSlidesPerView(),
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    grabCursor: true,
+  });
+
+  window.addEventListener('resize', function() {
+    swiper.params.slidesPerView = getSlidesPerView();
+    swiper.update();
+  });
+</script>
+
+</body>
+</html>
